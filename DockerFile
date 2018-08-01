@@ -1,0 +1,5 @@
+From centos
+RUN yum install -y java-1.8.0-openjdk
+EXPOSE 8080
+ADD ./application.jar application.jar 
+ENTRYPOINT ["java","-jar","application.jar"]
